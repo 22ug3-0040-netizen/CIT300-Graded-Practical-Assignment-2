@@ -3,10 +3,16 @@ public class ArrayOperations {
     private int[] array;
     private int size;
 
-    public ArrayOperations(int capacity) {
-        array = new int[capacity];
-        size = 0;
+   public ArrayOperations(int capacity) {
+    if (capacity < 0) {
+        throw new IllegalArgumentException(
+            "Array capacity cannot be negative."
+        );
     }
+
+    array = new int[capacity];
+    size = 0;
+}
 
     // Insert a value into the array
     public void insert(int value) {
