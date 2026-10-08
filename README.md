@@ -11,7 +11,7 @@
 The Data Structure and Graph Performance Analyzer is a Java-based console application developed to demonstrate the practical implementation of fundamental data structures and algorithms.
 
 The system includes Array, Stack, Queue, Linked List, Searching, Sorting, Graph Operations, Graph Traversals, and Performance Comparison. All components are integrated into a console-based main menu.
-
+The application provides interactive submenus that allow users to enter their own values and perform data structure and algorithm operations through the console.
 ---
 
 ## Team Members
@@ -224,7 +224,13 @@ Run the application.
 ```text
 java Main
 ```
+### Alternative Run Command (Low Memory)
 
+If the computer has limited memory, run the application using:
+
+```text
+java -Xms16m -Xmx128m Main
+```
 ---
 
 ## Main Menu
@@ -289,7 +295,7 @@ java Main
 ```
 
 The main menu options and individual data structure operations were tested to verify that the system works correctly.
-
+The interactive Array, Stack, Queue, Linked List, Searching, Sorting, Graph, Performance Comparison, and Display All Results features were tested through the console menu.
 ---
 
 ## Conclusion
