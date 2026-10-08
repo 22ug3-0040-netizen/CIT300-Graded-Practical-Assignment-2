@@ -7,9 +7,15 @@ public class GraphOperations {
     private int vertices;
 
     public GraphOperations(int vertices) {
-        this.vertices = vertices;
-        adjacencyMatrix = new int[vertices][vertices];
+    if (vertices < 0) {
+        throw new IllegalArgumentException(
+            "Number of vertices cannot be negative."
+        );
     }
+
+    this.vertices = vertices;
+    adjacencyMatrix = new int[vertices][vertices];
+}
 
     // Add a new vertex
     public void addVertex() {
