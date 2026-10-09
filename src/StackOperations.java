@@ -4,9 +4,15 @@ public class StackOperations {
     private int top;
 
     public StackOperations(int capacity) {
-        stack = new int[capacity];
-        top = -1;
+    if (capacity < 0) {
+        throw new IllegalArgumentException(
+            "Stack capacity cannot be negative."
+        );
     }
+
+    stack = new int[capacity];
+    top = -1;
+}
 // Push a value onto the stack
 public void push(int value) {
     if (top == stack.length - 1) {
